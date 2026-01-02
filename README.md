@@ -1,37 +1,83 @@
-# 🎬 Smart YouTube Chapters (TubeStamp)
+# 🎯 Smart YouTube Chapter Generator
 
-**Smart YouTube Chapters** is an AI-powered tool built with Streamlit that automatically generates meaningful, summarized timestamps for any YouTube video. 
+## 📌 Project Overview
+Smart YouTube Chapter Generator is a simple web application that automatically creates **human-readable chapters (timestamps)** from any YouTube video.
 
-Unlike standard transcription tools that just output text, this app uses a **Dual-AI Architecture**:
-1. **OpenAI Whisper (Base):** To listen to the video and extract highly accurate timestamps for every sentence.
-2. **DistilBART Summarizer:** To analyze groups of speech and rewrite them into professional, "meaningful" chapter titles.
+You just paste a YouTube link, click a button, and the app:
+- Downloads the video audio
+- Converts speech into text
+- Detects important topic changes
+- Creates clean chapters with timestamps
+- Lets you jump to any chapter instantly
 
----
-
-## ✨ Features
-
-- **🎯 Meaningful Titles:** Uses NLP to summarize blocks of text into concise headlines (e.g., "Introduction", "Market Trends Analysis").
-- **🚀 One-Click Generation:** Just paste a URL and hit generate.
-- **📺 Interactive Player:** The side-by-side view allows you to click a chapter button to jump the video to that exact second.
-- **📥 Local Processing:** Runs on your machine—no expensive API keys required.
-- **✅ YouTube-Ready:** Generates timestamps in the standard `00:00 - Title` format.
+No manual work. No editing. Fully automatic.
 
 ---
 
-## 🛠️ Prerequisites
+## ❓ Problem This Project Solves
+Watching long YouTube videos is time-consuming.
 
-Before running the application, you must have the following installed on your system:
+Problems users face:
+- No chapters available
+- Hard to find important parts
+- Wasting time scrolling the video
 
-1. **Python 3.8+**
-2. **FFmpeg:** Required for processing the audio files.
-   - **Windows:** `choco install ffmpeg`
-   - **Mac:** `brew install ffmpeg`
-   - **Linux:** `sudo apt install ffmpeg`
+This project solves that by:
+- Automatically creating chapters
+- Making long videos easy to navigate
+- Saving time for learning, revision, and content review
 
 ---
 
-## 🚀 Installation & Setup
+## 👥 Who Can Use This Project
+This project is useful for:
+- Students
+- Teachers
+- YouTubers
+- Content creators
+- Researchers
+- Anyone watching long YouTube videos
 
-1. **Clone the project folder:**
-   ```bash
-   cd youtube-chapters
+You **do not need coding knowledge** to use the app.
+
+---
+
+## 🧠 How It Works (In Simple Words)
+1. The app downloads only the **audio** from a YouTube video
+2. AI converts speech into text (speech-to-text)
+3. The app finds sentences that sound like topic changes
+4. It creates chapters with timestamps
+5. You can click any chapter to jump to that part of the video
+
+---
+
+## 🛠️ Requirements (Before You Start)
+
+### Required Software
+You must install these **before running the app**:
+
+1. **Python 3.9 or higher**
+2. **FFmpeg**
+   - Used to convert video audio
+   - Must be installed and added to system PATH
+
+> Assumption: You are running this project on **Windows / Linux / macOS**
+
+---
+
+## ▶️ How To Use (Step-By-Step)
+
+### Step 1: Download Project Files
+Download or clone the project folder.
+
+You should see:
+- `app.py` (or similar main Python file)
+- `requirements.txt`
+
+---
+
+### Step 2: Install Required Libraries
+Open terminal / command prompt inside the project folder and run:
+
+```bash
+pip install -r requirements.txt
