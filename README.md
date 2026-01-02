@@ -81,3 +81,11 @@ Open terminal / command prompt inside the project folder and run:
 
 ```bash
 pip install -r requirements.txt
+```
+
+
+### Step 3: Run the Application
+
+Start the app using this command:
+```bash
+streamlit run app.py
